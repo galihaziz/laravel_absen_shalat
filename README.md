@@ -58,10 +58,18 @@ Jalankan `php artisan test`. Test menggunakan SQLite in-memory dan menguji login
 `php artisan serve`
 ## cara setub di env agar fitur lupa password bekerja
 `MAIL_MAILER=smtp`
+
 `MAIL_HOST=smtp.gmail.com`
+
 `MAIL_PORT=587`
+
 `MAIL_USERNAME=email_yang_digunakan_untuk_kirim_gmail`
+
 `MAIL_PASSWORD=google_app_password`
+
 `MAIL_ENCRYPTION=tls`
+
 `MAIL_FROM_ADDRESS=email_yang_digunakan_untuk_kirim_gmail`
+
 `MAIL_FROM_NAME="${APP_NAME}"`
+
