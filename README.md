@@ -37,3 +37,20 @@ Untuk mengirim melalui Gmail, isi `.env` dengan `MAIL_MAILER=smtp`, `MAIL_HOST=s
 ## Pengujian
 
 Jalankan `php artisan test`. Test menggunakan SQLite in-memory dan menguji login, otorisasi, simpan absensi, laporan, import, serta ekspor.
+## Cara setup
+# 1. Clone repositori & masuk ke direktori proyek
+git clone https://github.com/username/repository-name.git
+cd repository-name
+
+# 2. Install dependensi PHP
+composer install
+
+# 3. Setup file konfigurasi & generate app key
+cp .env.example .env
+php artisan key:generate
+
+# 4. Jalankan migrasi dan isi database awal (pastikan DB sudah dibuat & dikonfigurasi di .env)
+php artisan migrate --seed
+
+# 5. Jalankan server lokal Laravel
+php artisan serve
